@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #000000;
+      }
+      .middle {
+        background-color: #ffffff;
+        text-align: center;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Mitch's Basic HTML Website</h1>
-    <p>
-      Welcome to my basic HTML website. Built as part of SIT120 - Introduction
-      to Responsive Web Apps.
-    </p>
-    <b>This site uses:</b>
-    <ul>
-      <li>h1 - Heading 1</li>
-      <li>p - Parapgrah</li>
-      <li>b - Bold</li>
-      <li>ul - Unorderd List</li>
-      <li>img - Image</li>
-    </ul>
-    <img src="images/photo.jpeg" alt="Mitch and Alex in Tasmania" />
-    <figcaption>Mitch and Alex in Tasmania - 2021</figcaption>
+    <h1 style="text-align: center; color:#ffffff;">
+      Mitch's Basic HTML Website
+    </h1>
+    <div class="row">
+      <div class="column left"></div>
+      <div class="column middle">
+        <p>
+          Welcome to my basic HTML website. Built as part of SIT120 -
+          Introduction to Responsive Web Apps.
+        </p>
+        <b>This site uses:</b>
+        <ul>
+          <li>h1 - Heading 1</li>
+          <li>p - Parapgrah</li>
+          <li>b - Bold</li>
+          <li>ul - Unorderd List</li>
+          <li>img - Image</li>
+        </ul>
+        <img src="images/photo.jpeg" alt="Mitch and Alex in Tasmania" />
+        <figcaption>Mitch and Alex in Tasmania - 2021</figcaption>
+      </div>
+      <div class="column right"></div>
+    </div>
   </body>
 </html>
