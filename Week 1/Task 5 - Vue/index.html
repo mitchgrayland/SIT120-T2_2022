@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Todo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <p><b>Todos:</b></p>
+    <div id="app">
+      <div
+        v-for="todo in todos"
+        :key="todo.title"
+        :style="{ textDecoration: todo.checked? 'line-through':'none' }"
+      >
+        <input type="checkbox" v-model="todo.checked" />
+        {{ todo.title }}
+      </div>
+    </div>
+  </body>
+</html>
+<script src="todo.js"></script>
