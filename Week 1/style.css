@@ -1,15 +1,16 @@
-.column {
-  float: left;
-  padding: 10px;
-}
+@media not screen and (max-width: 640px) {
+  .column {
+    float: left;
+    padding: 1.66%;
+  }
+  .left,
+  .right {
+    width: 20%;
+  }
 
-.left,
-.right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
+  .middle {
+    width: 50%;
+  }
 }
 
 .row:after {

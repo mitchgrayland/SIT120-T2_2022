@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue Hello World App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="hello-world-app">
+      <h1>{{ heading }}</h1>
+      <p>{{ message }}</p>
+      <div v-if="heading === 'Hello World!'">
+        Welcome world to the app!
+      </div>
+      <div v-else-if="heading === 'Hello Mitch!'">
+        Welcome Mitch to the app!
+      </div>
+      <div v-else>
+        Hello stranger!
+      </div>
+      <p>List of fruits:</p>
+      <li v-for="fruit in fruits">
+        {{ fruit.name }}
+      </li>
+    </div>
+    <input v-model="message2" placeholder="edit me" />
+    <p>Message is: {{ message2 }}</p>
+  </body>
+</html>
+<script src="hello.js"></script>

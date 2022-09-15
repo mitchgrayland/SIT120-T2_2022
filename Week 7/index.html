@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue Week 7 Tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>This is a global component and can be used anywhere</p>
+      <button-tracker></button-tracker>
+      <p>
+        List of fruits - this is a local component and can only be used in this
+        instance.
+      </p>
+      <li v-for="fruit in fruits">
+        {{ fruit.name }}
+      </li>
+      <template>
+        <p>{{ fullname }}</p>
+        <p>{{ email }}</p>
+      </template>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>

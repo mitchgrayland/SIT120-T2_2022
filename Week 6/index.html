@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue Week 6 Form Input Tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="hello-world-app">
+      <p>Test input. It will update as you type.</p>
+      <input v-model="message" placeholder="Type here" />
+      <p>Message is: {{ message }}</p>
+      <p>Lazy test input. It will update once typing is finished.</p>
+      <input v-model.lazy="message2" placeholder="Type here" />
+      <p>Message is: {{ message2 }}</p>
+      <p>Password input.</p>
+      <input type="password" v-model.lazy="password" placeholder="Type here" />
+      <p>Super security password is: {{ password }}</p>
+      <br />
+      <p>Checkbox will load ticked by default</p>
+      <input type="checkbox" id="checkbox" v-model="checked" />
+      <label for="checkbox">{{ checked }}</label>
+      <p>Select your favourite fruit</p>
+      <select v-model="selected">
+        <option v-for="fruit in fruits">
+          {{ fruit.name }}
+        </option>
+      </select>
+      <p>Selected: {{ selected }}</p>
+    </div>
+  </body>
+</html>
+<script src="index.js"></script>

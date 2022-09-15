@@ -3,6 +3,7 @@
   <head>
     <title>Mitch's Basic HTML Website</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="script.js"></script>
     <style>
       body {
@@ -39,6 +40,27 @@
         <p id="date-field"></p>
         <img src="images/photo.jpeg" alt="Mitch and Alex in Tasmania" />
         <figcaption>Mitch and Alex in Tasmania - 2021</figcaption>
+        <br />
+        <canvas id="myCanvas" width="100%" style="border:1px solid #d3d3d3;"
+          >Your browser does not support the HTML canvas tag.</canvas
+        >
+
+        <script>
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          ctx.moveTo(0, 0);
+          ctx.lineTo(200, 100);
+          ctx.stroke();
+        </script>
+        <br /><br />
+        <iframe
+          width="80%"
+          src="https://www.youtube.com/embed/JbCBv5ZS_Nw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
       <div class="column right"></div>
     </div>
